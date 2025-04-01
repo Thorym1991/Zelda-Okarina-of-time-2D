@@ -1,0 +1,238 @@
+[gd_scene load_steps=8 format=3 uid="uid://cibr13hlys8gx"]
+
+[ext_resource type="Texture2D" uid="uid://dtes3xdmwteiq" path="res://GUI/player_hud/82158.png" id="1_5p7rb"]
+[ext_resource type="Script" path="res://GUI/player_hud/playerhud.gd" id="1_88jkc"]
+[ext_resource type="PackedScene" uid="uid://bx75jbfi8wshx" path="res://GUI/player_hud/heart.tscn" id="2_ecrke"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tvas0"]
+line_spacing = 6.0
+font_size = 44
+font_color = Color(0.941176, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_s76sd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/Gameover/VBoxContainer/fade to black:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/Gameover:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_f8y1s"]
+resource_name = "show_game_over"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/Gameover/VBoxContainer/fade to black:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.766667, 3.06667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0.486275), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/Gameover:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.766667, 3.06667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 0.988235)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xbk8o"]
+_data = {
+"RESET": SubResource("Animation_s76sd"),
+"show_game_over": SubResource("Animation_f8y1s")
+}
+
+[node name="PlayerHud" type="CanvasLayer"]
+layer = 2
+script = ExtResource("1_88jkc")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.003
+anchor_top = 0.005
+anchor_right = 0.071
+anchor_bottom = 0.066
+offset_left = -6.456
+offset_top = -0.24
+offset_right = 52.208
+offset_bottom = 26.232
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(32, 4)
+scale = Vector2(0.75, 0.987179)
+texture = ExtResource("1_5p7rb")
+region_enabled = true
+region_rect = Rect2(127.557, 140.882, 66.9125, 39.684)
+
+[node name="HFlowContainer" type="HFlowContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 11.0
+offset_right = -22.464
+offset_bottom = 4.328
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Heart" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+size_flags_horizontal = 1
+
+[node name="Heart2" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Heart3" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart4" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart5" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart6" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart7" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart8" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart9" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart10" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart11" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart12" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart13" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart14" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart15" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart16" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart17" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart18" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart19" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Heart20" parent="Control/HFlowContainer" instance=ExtResource("2_ecrke")]
+layout_mode = 2
+
+[node name="Gameover" type="Control" parent="Control"]
+anchors_preset = 0
+offset_left = -246.344
+offset_top = -230.76
+offset_right = 894.656
+offset_bottom = 414.24
+
+[node name="ColorRect" type="ColorRect" parent="Control/Gameover"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.606
+anchor_bottom = 1.789
+offset_left = -145.304
+offset_top = 281.84
+offset_right = -1911.75
+offset_bottom = -818.065
+
+[node name="game over" type="Label" parent="Control/Gameover"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 2.231
+anchor_bottom = 2.613
+offset_left = 433.0
+offset_top = 365.0
+offset_right = -1872.57
+offset_bottom = -1218.39
+grow_horizontal = 2
+grow_vertical = 2
+text = "Game Over"
+label_settings = SubResource("LabelSettings_tvas0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Gameover"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.895
+anchor_top = 1.203
+anchor_right = 0.895
+anchor_bottom = 1.203
+offset_left = -618.195
+offset_top = -331.935
+offset_right = -317.195
+offset_bottom = -265.935
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="fortzetzen" type="Button" parent="Control/Gameover/VBoxContainer"]
+layout_mode = 2
+text = "Fortsetzen"
+
+[node name="fade to black" type="ColorRect" parent="Control/Gameover/VBoxContainer"]
+show_behind_parent = true
+layout_mode = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/Gameover/VBoxContainer"]
+root_node = NodePath("../../../..")
+libraries = {
+"": SubResource("AnimationLibrary_xbk8o")
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Control/Gameover/VBoxContainer"]
+
+[node name="back" type="Button" parent="Control/Gameover/VBoxContainer"]
+layout_mode = 2
+text = "Zurück zum menu"

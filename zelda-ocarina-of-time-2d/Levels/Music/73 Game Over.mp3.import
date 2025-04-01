@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://m3gfwvfdotoj"
+path="res://.godot/imported/73 Game Over.mp3-5f2a576a04d35177507d6b10e50a2b02.mp3str"
+
+[deps]
+
+source_file="res://Levels/Music/73 Game Over.mp3"
+dest_files=["res://.godot/imported/73 Game Over.mp3-5f2a576a04d35177507d6b10e50a2b02.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

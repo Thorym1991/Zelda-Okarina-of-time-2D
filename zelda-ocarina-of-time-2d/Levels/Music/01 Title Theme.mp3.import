@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://r5mcg6lyt76e"
+path="res://.godot/imported/01 Title Theme.mp3-76606fd04dfcab9fded00b7d014498b8.mp3str"
+
+[deps]
+
+source_file="res://Levels/Music/01 Title Theme.mp3"
+dest_files=["res://.godot/imported/01 Title Theme.mp3-76606fd04dfcab9fded00b7d014498b8.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

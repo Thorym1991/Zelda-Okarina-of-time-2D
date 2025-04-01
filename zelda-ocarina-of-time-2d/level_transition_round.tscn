@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg4llko54rp4p"]
+
+[ext_resource type="Script" path="res://Levels/Level_skripts/level_transition_round.gd" id="1_vpygq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1yyac"]
+radius = 9.85194
+
+[node name="level_transition_round" type="Area2D"]
+scale = Vector2(1, 0.998106)
+script = ExtResource("1_vpygq")
+size = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1yyac")
+debug_color = Color(0.435294, 0.180392, 0.486275, 0.388235)

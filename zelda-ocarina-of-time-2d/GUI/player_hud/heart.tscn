@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx75jbfi8wshx"]
+
+[ext_resource type="Script" path="res://GUI/player_hud/heart.gd" id="1_dvdbw"]
+[ext_resource type="Texture2D" uid="uid://bsqkwm8fx8af0" path="res://GUI/player_hud/New Piskel (26).png" id="2_fp25d"]
+
+[node name="Heart" type="Control"]
+custom_minimum_size = Vector2(9, 9)
+layout_mode = 3
+anchor_right = 0.021
+anchor_bottom = 0.009
+offset_right = -30.32
+offset_bottom = 0.28
+size_flags_horizontal = 0
+script = ExtResource("1_dvdbw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(5, 5)
+texture = ExtResource("2_fp25d")
+hframes = 3

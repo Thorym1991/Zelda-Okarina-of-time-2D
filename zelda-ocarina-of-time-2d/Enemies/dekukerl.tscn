@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bghqyf5tbnhmr"]
+
+[ext_resource type="Texture2D" uid="uid://dgbepdx43b860" path="res://Enemies/Deku Kerl/New Piskel(12).png" id="1_58m4j"]
+
+[node name="Dekukerl" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_58m4j")
+hframes = 10
+vframes = 7
+frame = 2
