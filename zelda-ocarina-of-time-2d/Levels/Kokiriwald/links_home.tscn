@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=4 uid="uid://dm3yw1hl0ttjx"]
 
-[ext_resource type="Script" path="res://Levels/Level_skripts/Level.gd" id="1_4c10v"]
+[ext_resource type="Script" uid="uid://ccnf2wymu4ejf" path="res://Levels/Level_skripts/Level.gd" id="1_4c10v"]
 [ext_resource type="Texture2D" uid="uid://dfivdgbqxs5qq" path="res://tielsets/Tiles/links home (1).png" id="2_g52fi"]
 [ext_resource type="PackedScene" uid="uid://cs8npxb5pansr" path="res://Levels/Level_skripts/Player_spwan.tscn" id="4_kk7vs"]
 [ext_resource type="PackedScene" uid="uid://cd4f746725ats" path="res://Levels/Level_skripts/level_transition.tscn" id="6_wdkqk"]

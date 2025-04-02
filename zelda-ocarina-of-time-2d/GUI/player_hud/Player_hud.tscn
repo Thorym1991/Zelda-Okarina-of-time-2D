@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cibr13hlys8gx"]
 
 [ext_resource type="Texture2D" uid="uid://dtes3xdmwteiq" path="res://GUI/player_hud/82158.png" id="1_5p7rb"]
-[ext_resource type="Script" path="res://GUI/player_hud/playerhud.gd" id="1_88jkc"]
+[ext_resource type="Script" uid="uid://cq84pyfmdthtk" path="res://GUI/player_hud/playerhud.gd" id="1_88jkc"]
 [ext_resource type="PackedScene" uid="uid://bx75jbfi8wshx" path="res://GUI/player_hud/heart.tscn" id="2_ecrke"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tvas0"]
@@ -66,8 +66,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xbk8o"]
 _data = {
-"RESET": SubResource("Animation_s76sd"),
-"show_game_over": SubResource("Animation_f8y1s")
+&"RESET": SubResource("Animation_s76sd"),
+&"show_game_over": SubResource("Animation_f8y1s")
 }
 
 [node name="PlayerHud" type="CanvasLayer"]

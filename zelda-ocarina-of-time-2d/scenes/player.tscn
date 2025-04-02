@@ -1,18 +1,18 @@
 [gd_scene load_steps=46 format=3 uid="uid://c4smiwbfcypf4"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_0kmn0"]
-[ext_resource type="Script" path="res://scripts/Player_state_machine.gd" id="3_5jkp6"]
-[ext_resource type="Script" path="res://scripts/state_idle.gd" id="4_aw321"]
-[ext_resource type="Script" path="res://scripts/state_walk.gd" id="4_i8p0r"]
-[ext_resource type="Script" path="res://scripts/state_attack.gd" id="5_pdegu"]
-[ext_resource type="Script" path="res://scripts/state_stun.gd" id="8_5d4x7"]
+[ext_resource type="Script" uid="uid://c602w8bvkaxk2" path="res://scripts/player.gd" id="1_0kmn0"]
+[ext_resource type="Script" uid="uid://bmqpcjj34cunb" path="res://scripts/Player_state_machine.gd" id="3_5jkp6"]
+[ext_resource type="Script" uid="uid://cfgtsi0qkr3b6" path="res://scripts/state_idle.gd" id="4_aw321"]
+[ext_resource type="Script" uid="uid://ba4qphfo7vaej" path="res://scripts/state_walk.gd" id="4_i8p0r"]
+[ext_resource type="Script" uid="uid://bgk30xlgp1ox3" path="res://scripts/state_attack.gd" id="5_pdegu"]
+[ext_resource type="Script" uid="uid://dufaqjxioapdj" path="res://scripts/state_stun.gd" id="8_5d4x7"]
 [ext_resource type="AudioStream" uid="uid://cm4rboofy5axg" path="res://Sounds/OOT_YoungLink_Attack2.wav" id="8_mrlgr"]
 [ext_resource type="AudioStream" uid="uid://uqe04vlm7q5j" path="res://Sounds/OOT_Steps_Grass1.wav" id="9_7126v"]
 [ext_resource type="PackedScene" uid="uid://5xtwno08u6on" path="res://GeneralNodes/HurtBox/hurt_box.tscn" id="9_by7nt"]
-[ext_resource type="Script" path="res://scripts/Player_InteractionsHost.gd" id="9_ewlx3"]
-[ext_resource type="Script" path="res://scenes/state_death.gd" id="11_ncpmu"]
+[ext_resource type="Script" uid="uid://cj7pmgtsio5hf" path="res://scripts/Player_InteractionsHost.gd" id="9_ewlx3"]
+[ext_resource type="Script" uid="uid://bmlt1o3useo87" path="res://scenes/state_death.gd" id="11_ncpmu"]
 [ext_resource type="AudioStream" uid="uid://m3gfwvfdotoj" path="res://Levels/Music/73 Game Over.mp3" id="12_veou0"]
-[ext_resource type="Script" path="res://scripts/player_camera.gd" id="12_x8yv3"]
+[ext_resource type="Script" uid="uid://k7qka18er708" path="res://scripts/player_camera.gd" id="12_x8yv3"]
 [ext_resource type="AudioStream" uid="uid://1ittowtyqrly" path="res://Sounds/LTTP_Link_Enemy_Collision.ogg" id="13_5nt7h"]
 [ext_resource type="Texture2D" uid="uid://bus0drynh24sr" path="res://art/Graphics/linkus (1).png" id="13_nnkgx"]
 [ext_resource type="PackedScene" uid="uid://bslgj5s2welxu" path="res://GeneralNodes/Hitbox/hit_box.tscn" id="16_kd20f"]
@@ -802,21 +802,21 @@ tracks/3/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_du3py"]
 _data = {
-"Idel ": SubResource("Animation_ir4yt"),
-"RESET": SubResource("Animation_7bsmi"),
-"death": SubResource("Animation_qjxxt"),
-"down_Idle": SubResource("Animation_v4oep"),
-"down_attack": SubResource("Animation_78hck"),
-"down_stun": SubResource("Animation_liryc"),
-"down_walk": SubResource("Animation_sgpe1"),
-"side_Idle": SubResource("Animation_bs6mi"),
-"side_attack": SubResource("Animation_wwfq3"),
-"side_stun": SubResource("Animation_lf635"),
-"side_walk": SubResource("Animation_2pb27"),
-"up_Idle": SubResource("Animation_007o0"),
-"up_attack": SubResource("Animation_cyr8e"),
-"up_stun": SubResource("Animation_ys84q"),
-"up_walk": SubResource("Animation_8n7pu")
+&"Idel ": SubResource("Animation_ir4yt"),
+&"RESET": SubResource("Animation_7bsmi"),
+&"death": SubResource("Animation_qjxxt"),
+&"down_Idle": SubResource("Animation_v4oep"),
+&"down_attack": SubResource("Animation_78hck"),
+&"down_stun": SubResource("Animation_liryc"),
+&"down_walk": SubResource("Animation_sgpe1"),
+&"side_Idle": SubResource("Animation_bs6mi"),
+&"side_attack": SubResource("Animation_wwfq3"),
+&"side_stun": SubResource("Animation_lf635"),
+&"side_walk": SubResource("Animation_2pb27"),
+&"up_Idle": SubResource("Animation_007o0"),
+&"up_attack": SubResource("Animation_cyr8e"),
+&"up_stun": SubResource("Animation_ys84q"),
+&"up_walk": SubResource("Animation_8n7pu")
 }
 
 [sub_resource type="Animation" id="Animation_igk73"]
@@ -999,11 +999,11 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r8vd2"]
 _data = {
-"RESET": SubResource("Animation_igk73"),
-"down_attack": SubResource("Animation_wuqju"),
-"new_animation": SubResource("Animation_d6fjo"),
-"side_attack": SubResource("Animation_2obie"),
-"up_attack": SubResource("Animation_kofhy")
+&"RESET": SubResource("Animation_igk73"),
+&"down_attack": SubResource("Animation_wuqju"),
+&"new_animation": SubResource("Animation_d6fjo"),
+&"side_attack": SubResource("Animation_2obie"),
+&"up_attack": SubResource("Animation_kofhy")
 }
 
 [sub_resource type="Animation" id="Animation_wqdwf"]
@@ -1068,14 +1068,13 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_d4hn5"]
 _data = {
-"RESET": SubResource("Animation_wqdwf"),
-"damaged": SubResource("Animation_eruoh"),
-"default": SubResource("Animation_hl2jv")
+&"RESET": SubResource("Animation_wqdwf"),
+&"damaged": SubResource("Animation_eruoh"),
+&"default": SubResource("Animation_hl2jv")
 }
 
-[node name="player" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D" groups=["Player"]]
 texture_filter = 1
-position = Vector2(0, -11)
 collision_layer = 19
 collision_mask = 19
 motion_mode = 1
@@ -1135,7 +1134,7 @@ script = ExtResource("12_x8yv3")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 audio_max_polyphony = 40
 libraries = {
-"": SubResource("AnimationLibrary_du3py")
+&"": SubResource("AnimationLibrary_du3py")
 }
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -1156,7 +1155,7 @@ frame = 89
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 root_node = NodePath("../AttackEffectSprite")
 libraries = {
-"": SubResource("AnimationLibrary_r8vd2")
+&"": SubResource("AnimationLibrary_r8vd2")
 }
 autoplay = "new_animation"
 
@@ -1172,5 +1171,5 @@ script = ExtResource("9_ewlx3")
 
 [node name="EffectAnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_d4hn5")
+&"": SubResource("AnimationLibrary_d4hn5")
 }

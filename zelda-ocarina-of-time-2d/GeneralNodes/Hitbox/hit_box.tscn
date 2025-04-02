@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bslgj5s2welxu"]
 
-[ext_resource type="Script" path="res://GeneralNodes/Hitbox/hit_box.gd" id="1_coxdb"]
+[ext_resource type="Script" uid="uid://ctnpbyycu34m8" path="res://GeneralNodes/Hitbox/hit_box.gd" id="1_coxdb"]
 
 [node name="HitBox" type="Area2D"]
 collision_layer = 256

@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://bvkrgsryhb2ji"]
 
-[ext_resource type="Script" path="res://Levels/Level_skripts/Level.gd" id="1_ent1a"]
+[ext_resource type="Script" uid="uid://ccnf2wymu4ejf" path="res://Levels/Level_skripts/Level.gd" id="1_ent1a"]
 [ext_resource type="Texture2D" uid="uid://drgrlknajj6ht" path="res://Levels/Maps/New Piskel (61).png" id="1_iqcsi"]
 [ext_resource type="PackedScene" uid="uid://cd4f746725ats" path="res://Levels/Level_skripts/level_transition.tscn" id="2_cie4k"]
-[ext_resource type="Script" path="res://scripts/level_tile_map.gd" id="3_61ini"]
+[ext_resource type="Script" uid="uid://cv6drlw2r8ddj" path="res://scripts/level_tile_map.gd" id="3_61ini"]
 [ext_resource type="PackedScene" uid="uid://bc0p3proi3qnd" path="res://Enemies/Gohma/Gohma.tscn" id="5_1setf"]
 [ext_resource type="PackedScene" uid="uid://cs8npxb5pansr" path="res://Levels/Level_skripts/Player_spwan.tscn" id="6_os00e"]
 [ext_resource type="AudioStream" uid="uid://wcdcsxapwj47" path="res://Levels/Music/13 Boss Battle.mp3" id="7_nq0f4"]

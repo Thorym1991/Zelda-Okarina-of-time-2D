@@ -1,18 +1,18 @@
 [gd_scene load_steps=43 format=3 uid="uid://06aqwem8s1ec"]
 
-[ext_resource type="Script" path="res://Enemies/Enemies.gd" id="1_6l14t"]
+[ext_resource type="Script" uid="uid://bkjcmh638wvim" path="res://Enemies/Enemies.gd" id="1_6l14t"]
 [ext_resource type="Texture2D" uid="uid://dgfllrsxxlk2g" path="res://Enemies/deku_baba_front_rough_by_gamekrazzyproduction_d8mdygw-fullview (3) (1).png" id="2_muyep"]
 [ext_resource type="PackedScene" uid="uid://5xtwno08u6on" path="res://GeneralNodes/HurtBox/hurt_box.tscn" id="2_roqpq"]
 [ext_resource type="PackedScene" uid="uid://bslgj5s2welxu" path="res://GeneralNodes/Hitbox/hit_box.tscn" id="3_70dyd"]
 [ext_resource type="AudioStream" uid="uid://camor2kqjb8gj" path="res://Sounds/LTTP_Enemy_Collision.ogg" id="3_fd3ys"]
 [ext_resource type="AudioStream" uid="uid://d31xmg24gexjv" path="res://Sounds/LTTP_Enemy_Defeat.ogg" id="4_16d0o"]
-[ext_resource type="Script" path="res://Enemies/Scripts/enemy_state_machine.gd" id="5_1t05g"]
-[ext_resource type="Script" path="res://Enemies/States/enemy_idle_state.gd" id="6_u8v5w"]
-[ext_resource type="Script" path="res://Enemies/States/enemy_stun_state.gd" id="7_60dkr"]
-[ext_resource type="Script" path="res://Enemies/States/enemy_destroy_state.gd" id="8_36y1p"]
+[ext_resource type="Script" uid="uid://d2s1enpm72et0" path="res://Enemies/Scripts/enemy_state_machine.gd" id="5_1t05g"]
+[ext_resource type="Script" uid="uid://clw2pkxqok53g" path="res://Enemies/States/enemy_idle_state.gd" id="6_u8v5w"]
+[ext_resource type="Script" uid="uid://cwana0ys7tx14" path="res://Enemies/States/enemy_stun_state.gd" id="7_60dkr"]
+[ext_resource type="Script" uid="uid://gm2lggi1jyco" path="res://Enemies/States/enemy_destroy_state.gd" id="8_36y1p"]
 [ext_resource type="Texture2D" uid="uid://c63eo51w2x4w7" path="res://art/artworks/83385.png" id="9_r2mpd"]
-[ext_resource type="Script" path="res://Enemies/States/enemy_kampf_state.gd" id="11_8hc8p"]
-[ext_resource type="Script" path="res://Enemies/States/enemy_chase_state.gd" id="11_ro3fl"]
+[ext_resource type="Script" uid="uid://un4y273apw5r" path="res://Enemies/States/enemy_kampf_state.gd" id="11_8hc8p"]
+[ext_resource type="Script" uid="uid://dq1yswug8sjfd" path="res://Enemies/States/enemy_chase_state.gd" id="11_ro3fl"]
 [ext_resource type="PackedScene" uid="uid://bdc47ajarlkr5" path="res://Enemies/vision_area.tscn" id="14_y0d5g"]
 
 [sub_resource type="Animation" id="Animation_sic6x"]
@@ -1504,24 +1504,24 @@ tracks/5/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vvurb"]
 _data = {
-"RESET": SubResource("Animation_sic6x"),
-"Stun": SubResource("Animation_siysf"),
-"chase_down": SubResource("Animation_pa04c"),
-"chase_side": SubResource("Animation_a05p0"),
-"chase_up": SubResource("Animation_qnuky"),
-"destroy_down": SubResource("Animation_2iytp"),
-"destroy_side": SubResource("Animation_6fm06"),
-"destroy_up": SubResource("Animation_vu176"),
-"idle_down": SubResource("Animation_lceoc"),
-"idle_side": SubResource("Animation_u4yu7"),
-"idle_up": SubResource("Animation_1ydpn"),
-"kampf": SubResource("Animation_2rb3q"),
-"kampf_down": SubResource("Animation_2n26i"),
-"kampf_side": SubResource("Animation_v0mht"),
-"kampf_up": SubResource("Animation_g63np"),
-"stun_down": SubResource("Animation_rlstb"),
-"stun_side": SubResource("Animation_2yofw"),
-"stun_up": SubResource("Animation_oy14a")
+&"RESET": SubResource("Animation_sic6x"),
+&"Stun": SubResource("Animation_siysf"),
+&"chase_down": SubResource("Animation_pa04c"),
+&"chase_side": SubResource("Animation_a05p0"),
+&"chase_up": SubResource("Animation_qnuky"),
+&"destroy_down": SubResource("Animation_2iytp"),
+&"destroy_side": SubResource("Animation_6fm06"),
+&"destroy_up": SubResource("Animation_vu176"),
+&"idle_down": SubResource("Animation_lceoc"),
+&"idle_side": SubResource("Animation_u4yu7"),
+&"idle_up": SubResource("Animation_1ydpn"),
+&"kampf": SubResource("Animation_2rb3q"),
+&"kampf_down": SubResource("Animation_2n26i"),
+&"kampf_side": SubResource("Animation_v0mht"),
+&"kampf_up": SubResource("Animation_g63np"),
+&"stun_down": SubResource("Animation_rlstb"),
+&"stun_side": SubResource("Animation_2yofw"),
+&"stun_up": SubResource("Animation_oy14a")
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8cgjt"]
@@ -1600,10 +1600,10 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_noxx8"]
 _data = {
-"RESET": SubResource("Animation_4iuxp"),
-"destroy_down": SubResource("Animation_groav"),
-"destroy_side": SubResource("Animation_6k45k"),
-"destroy_up": SubResource("Animation_r762t")
+&"RESET": SubResource("Animation_4iuxp"),
+&"destroy_down": SubResource("Animation_groav"),
+&"destroy_side": SubResource("Animation_6k45k"),
+&"destroy_up": SubResource("Animation_r762t")
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_udbym"]
@@ -1622,7 +1622,7 @@ frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_vvurb")
+&"": SubResource("AnimationLibrary_vvurb")
 }
 
 [node name="blau" type="CollisionShape2D" parent="."]
@@ -1702,7 +1702,7 @@ frame = 2
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="DestroyEffectSprite"]
 root_node = NodePath("../..")
 libraries = {
-"": SubResource("AnimationLibrary_noxx8")
+&"": SubResource("AnimationLibrary_noxx8")
 }
 
 [node name="VisionArea" parent="." instance=ExtResource("14_y0d5g")]

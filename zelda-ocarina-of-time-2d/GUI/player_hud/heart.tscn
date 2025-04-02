@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bx75jbfi8wshx"]
 
-[ext_resource type="Script" path="res://GUI/player_hud/heart.gd" id="1_dvdbw"]
+[ext_resource type="Script" uid="uid://q746o7ppiv0v" path="res://GUI/player_hud/heart.gd" id="1_dvdbw"]
 [ext_resource type="Texture2D" uid="uid://bsqkwm8fx8af0" path="res://GUI/player_hud/New Piskel (26).png" id="2_fp25d"]
 
 [node name="Heart" type="Control"]

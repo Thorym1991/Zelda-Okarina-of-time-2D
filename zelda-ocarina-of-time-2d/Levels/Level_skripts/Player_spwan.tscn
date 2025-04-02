@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cs8npxb5pansr"]
 
-[ext_resource type="Script" path="res://Levels/Level_skripts/Player_spwan.gd" id="1_y1hfu"]
+[ext_resource type="Script" uid="uid://0ab30pidt3ol" path="res://Levels/Level_skripts/Player_spwan.gd" id="1_y1hfu"]
 [ext_resource type="Texture2D" uid="uid://dfrfdb5csvans" path="res://art/Player/link sprite 5.0.png" id="2_esmih"]
 
 [node name="PlayerSpwan" type="Node2D"]

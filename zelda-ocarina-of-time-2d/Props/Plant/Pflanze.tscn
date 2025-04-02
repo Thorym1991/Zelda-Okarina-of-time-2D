@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://belstbjq26h0c"]
 
 [ext_resource type="Texture2D" uid="uid://crgaqc1s1h7h4" path="res://Props/Plant/New Piskel (60).png" id="1_irb26"]
-[ext_resource type="Script" path="res://Props/Plant/plant.gd" id="1_nt468"]
+[ext_resource type="Script" uid="uid://bl0bjkw6b5pd7" path="res://Props/Plant/plant.gd" id="1_nt468"]
 [ext_resource type="PackedScene" uid="uid://bslgj5s2welxu" path="res://GeneralNodes/Hitbox/hit_box.tscn" id="3_srcj2"]
 [ext_resource type="AudioStream" uid="uid://rwybq57dso0i" path="res://Sounds/LTTP_Grass_Cut.ogg" id="4_lq1ru"]
 [ext_resource type="Texture2D" uid="uid://cudu3iqpvlomv" path="res://art/Graphics/Grass.png" id="5_u24vh"]
@@ -165,9 +165,9 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3vj8c"]
 _data = {
-"RESET": SubResource("Animation_wea1e"),
-"destroy": SubResource("Animation_ifcco"),
-"idel": SubResource("Animation_4wckf")
+&"RESET": SubResource("Animation_wea1e"),
+&"destroy": SubResource("Animation_ifcco"),
+&"idel": SubResource("Animation_4wckf")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j66eo"]
@@ -192,7 +192,7 @@ texture = ExtResource("1_irb26")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 root_node = NodePath("../..")
 libraries = {
-"": SubResource("AnimationLibrary_3vj8c")
+&"": SubResource("AnimationLibrary_3vj8c")
 }
 autoplay = "idel"
 

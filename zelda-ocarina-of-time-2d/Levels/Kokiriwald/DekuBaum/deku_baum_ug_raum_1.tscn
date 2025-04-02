@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://be3qfim3l573j"]
 
-[ext_resource type="Script" path="res://Levels/Level_skripts/Level.gd" id="1_bag5s"]
+[ext_resource type="Script" uid="uid://ccnf2wymu4ejf" path="res://Levels/Level_skripts/Level.gd" id="1_bag5s"]
 [ext_resource type="Texture2D" uid="uid://cv8modij4o15b" path="res://Levels/Maps/image (36) (1) (3) (1) (1) (4).png" id="2_ned1s"]
-[ext_resource type="Script" path="res://scripts/level_tile_map.gd" id="3_gqc0w"]
+[ext_resource type="Script" uid="uid://cv6drlw2r8ddj" path="res://scripts/level_tile_map.gd" id="3_gqc0w"]
 [ext_resource type="PackedScene" uid="uid://cs8npxb5pansr" path="res://Levels/Level_skripts/Player_spwan.tscn" id="4_j1mmn"]
 [ext_resource type="PackedScene" uid="uid://bg4llko54rp4p" path="res://level_transition_round.tscn" id="4_nkyn3"]
 [ext_resource type="PackedScene" uid="uid://cd4f746725ats" path="res://Levels/Level_skripts/level_transition.tscn" id="5_j5iyj"]

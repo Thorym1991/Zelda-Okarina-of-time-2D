@@ -1,6 +1,6 @@
 [gd_scene load_steps=39 format=3 uid="uid://dct45msmhw3tp"]
 
-[ext_resource type="Script" path="res://Levels/Level_skripts/Level.gd" id="1_0niu5"]
+[ext_resource type="Script" uid="uid://ccnf2wymu4ejf" path="res://Levels/Level_skripts/Level.gd" id="1_0niu5"]
 [ext_resource type="Texture2D" uid="uid://daftspbqbe3hs" path="res://art/map/New Piskel (48).png" id="1_266gc"]
 [ext_resource type="Texture2D" uid="uid://irfxpw52ks5h" path="res://art/map/image (31).png" id="2_02uhy"]
 [ext_resource type="Texture2D" uid="uid://syksh4usxr7s" path="res://art/map/New Piskel (20).png" id="3_3nut1"]
@@ -16,7 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://8llka2cm2p4q" path="res://art/map/New Piskel (17).png" id="13_fny01"]
 [ext_resource type="Texture2D" uid="uid://c5tks21i8hyjb" path="res://art/map/New Piskel (18).png" id="14_x771f"]
 [ext_resource type="Texture2D" uid="uid://bqpg7hpjfttrk" path="res://art/map/New Piskel (19).png" id="15_2ubb1"]
-[ext_resource type="Script" path="res://scripts/level_tile_map.gd" id="17_liom3"]
+[ext_resource type="Script" uid="uid://cv6drlw2r8ddj" path="res://scripts/level_tile_map.gd" id="17_liom3"]
 [ext_resource type="PackedScene" uid="uid://belstbjq26h0c" path="res://Props/Plant/Pflanze.tscn" id="17_ntwir"]
 [ext_resource type="PackedScene" uid="uid://cd4f746725ats" path="res://Levels/Level_skripts/level_transition.tscn" id="19_iu0hw"]
 [ext_resource type="PackedScene" uid="uid://cs8npxb5pansr" path="res://Levels/Level_skripts/Player_spwan.tscn" id="21_6r6xx"]
@@ -2885,7 +2885,6 @@ sources/15 = SubResource("TileSetAtlasSource_2w04b")
 sources/16 = SubResource("TileSetAtlasSource_utiiv")
 
 [node name="world" type="Node2D"]
-position = Vector2(-7, -28)
 script = ExtResource("1_0niu5")
 
 [node name="TileMap" type="TileMap" parent="."]

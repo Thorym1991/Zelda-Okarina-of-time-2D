@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://b5lq3o1c1p75f"]
 
-[ext_resource type="Script" path="res://Levels/Level_skripts/Level.gd" id="1_l1nby"]
+[ext_resource type="Script" uid="uid://ccnf2wymu4ejf" path="res://Levels/Level_skripts/Level.gd" id="1_l1nby"]
 [ext_resource type="Texture2D" uid="uid://b3spa7e4wfpc0" path="res://Levels/Maps/image (36) (2).png" id="2_2n37s"]
-[ext_resource type="Script" path="res://scripts/level_tile_map.gd" id="3_fuhm6"]
+[ext_resource type="Script" uid="uid://cv6drlw2r8ddj" path="res://scripts/level_tile_map.gd" id="3_fuhm6"]
 [ext_resource type="PackedScene" uid="uid://cs8npxb5pansr" path="res://Levels/Level_skripts/Player_spwan.tscn" id="4_am7o3"]
 [ext_resource type="PackedScene" uid="uid://cd4f746725ats" path="res://Levels/Level_skripts/level_transition.tscn" id="5_xbahw"]
 [ext_resource type="AudioStream" uid="uid://b4s5o4tsqyi66" path="res://Levels/Music/12 Inside The Deku Tree.mp3" id="6_w6o5t"]
