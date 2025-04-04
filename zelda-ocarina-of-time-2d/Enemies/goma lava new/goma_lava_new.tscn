@@ -978,7 +978,7 @@ shape = SubResource("CapsuleShape2D_8jrdo")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_lgkcj")
+&"": SubResource("AnimationLibrary_lgkcj")
 }
 autoplay = "idle_down"
 
@@ -1015,5 +1015,5 @@ hframes = 7
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DestroyEffectSprite"]
 libraries = {
-"": SubResource("AnimationLibrary_lc1hm")
+&"": SubResource("AnimationLibrary_lc1hm")
 }

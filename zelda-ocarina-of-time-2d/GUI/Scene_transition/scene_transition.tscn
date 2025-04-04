@@ -86,7 +86,7 @@ grow_vertical = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Control"]
 libraries = {
-"": SubResource("AnimationLibrary_prgun")
+&"": SubResource("AnimationLibrary_prgun")
 }
 autoplay = "defualt"
 
