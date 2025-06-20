@@ -2468,7 +2468,7 @@ side = 3
 [node name="LevelTransition2" parent="TileMap" instance=ExtResource("2_5x7s0")]
 position = Vector2(-342, -211)
 scale = Vector2(1.88801, 0.978501)
-level = "res://Levels/Kokiriwald/DekuBaum/deku_baum_ug_1_raum_2.tscn"
+level = "uid://bvkrgsryhb2ji"
 size = 4
 side = 2
 

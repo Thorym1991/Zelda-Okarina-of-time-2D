@@ -25,6 +25,7 @@ SceneTransition="*res://GUI/Scene_transition/scene_transition.gd"
 PauseMenu="*res://pause_menu/pause_menu.tscn"
 SaveManager="*res://00_Globals/global_save_manager.gd"
 AudioManager="*res://00_Globals/globel_audio_manager.gd"
+GlobalSignalhub="*res://00_Globals/global_Signalhub.gd"
 
 [display]
 
