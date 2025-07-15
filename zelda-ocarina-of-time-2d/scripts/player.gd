@@ -10,7 +10,7 @@ var direction : Vector2 = Vector2.ZERO
 @onready var effect_animation_player: AnimationPlayer = $EffectAnimationPlayer
 @onready var sprite : Sprite2D = $Sprite2D
 @onready var hit_box: HitBox = $HitBox
-
+@onready var animation_tree: AnimationTree = $AnimationTree
 
 
 
@@ -35,9 +35,16 @@ func _ready():
 func _process(delta):
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
 	direction.y = Input.get_action_strength("down") - Input.get_action_strength("up")
-	pass
+	
+	var moving_down = direction.y > 0
+	var x_pressed = Input.is_action_pressed("Aktion")  # <- definiere diese Aktion im InputMap
+	var down_pressed = Input.is_action_pressed("down")
 
-func _physics_process(delta):
+	animation_tree.set("parameters/moving_down", moving_down)
+	animation_tree.set("parameters/y_pressed", x_pressed)
+	animation_tree.set("parameters/y_pressed", down_pressed)
+
+func _physics_process(_delta):
 	move_and_slide()
 
 
